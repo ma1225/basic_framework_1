@@ -12,6 +12,9 @@ class AuthTokenImpl:
         self.auth_token_calls = AuthTokenCalls(self.username, self.password)
 
     def generate_auth_token_for_apis(self):
+        """
+        :return: Parameter of auth_token and API response status
+        """
 
         status = False
         auth_token = ""

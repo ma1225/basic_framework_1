@@ -1,9 +1,14 @@
-2025-11-24 09:20:09 - INFO - Generate new auth token for API usage
-2025-11-24 09:20:09 - INFO - Getting new auth token for API usage
-2025-11-24 09:20:09 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
-2025-11-24 09:20:10 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 27
-2025-11-24 09:20:10 - INFO - Create new booking order
-2025-11-24 09:20:10 - INFO - Create new booking order with API
-2025-11-24 09:20:10 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
-2025-11-24 09:20:11 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 200 207
-2025-11-24 09:20:11 - INFO - Order info: {"bookingid": 4668, "booking": {"firstname": "2l5NYj39Se", "lastname": "C0CvhoIgRK", "totalprice": 20288, "depositpaid": true, "bookingdates": {"checkin": "2025-11-14", "checkout": "2025-11-24"}, "additionalneeds": "kRob9"}}
+2025-11-30 13:14:00 - INFO - Generate new auth token for API usage
+2025-11-30 13:14:00 - INFO - Getting new auth token for API usage
+2025-11-30 13:14:00 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2025-11-30 13:14:02 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 27
+2025-11-30 13:14:02 - INFO - Create new booking order
+2025-11-30 13:14:02 - INFO - Create new booking order with API
+2025-11-30 13:14:02 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2025-11-30 13:14:03 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 200 207
+2025-11-30 13:14:03 - INFO - Order info: {"bookingid": 1721, "booking": {"firstname": "KB3eKr6Jhj", "lastname": "EhJHTS7v5N", "totalprice": 43478, "depositpaid": true, "bookingdates": {"checkin": "2025-11-19", "checkout": "2025-12-28"}, "additionalneeds": "plssD"}}
+2025-11-30 13:14:03 - INFO - Get new booking order by booking order ID and verify data with API call
+2025-11-30 13:14:03 - INFO - Create new booking order with API
+2025-11-30 13:14:03 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2025-11-30 13:14:04 - DEBUG - https://restful-booker.herokuapp.com:443 "GET /booking/1721 HTTP/1.1" 200 178
+2025-11-30 13:14:04 - INFO - Order ID '1721' info: {"firstname": "KB3eKr6Jhj", "lastname": "EhJHTS7v5N", "totalprice": 43478, "depositpaid": true, "bookingdates": {"checkin": "2025-11-19", "checkout": "2025-12-28"}, "additionalneeds": "plssD"}

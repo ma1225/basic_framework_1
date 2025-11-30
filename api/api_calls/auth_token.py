@@ -8,6 +8,9 @@ class AuthTokenCalls:
         self.password = password
 
     def post_api_auth_token_call(self):
+        """
+        :return: API response of authorization token call
+        """
 
         api_base_url = get_base_api_url()
         endpoint = "auth"
