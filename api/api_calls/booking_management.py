@@ -22,7 +22,7 @@ class BookingManagementCalls:
 
         api_base_url = get_base_api_url()
         endpoint = "booking"
-        headers = {"Content-Type": "application/json", "Authorization": auth_token}
+        headers = {"Content-Type": "application/json", "Authorization": f"Bearer {auth_token}"}
         json_body = {"firstname": first_name, "lastname": last_name,
                      "totalprice": total_price, "depositpaid": deposit_paid, "bookingdates": {"checkin" : check_in_date, "checkout" : check_out_date},
                      "additionalneeds": additional_needs}
@@ -42,7 +42,7 @@ class BookingManagementCalls:
 
         api_base_url = get_base_api_url()
         endpoint = "booking"
-        headers = {"Content-Type": "application/json", "Authorization": auth_token}
+        headers = {"Content-Type": "application/json", "Authorization": f"Bearer {auth_token}"}
 
         if wildcard_params:
             response = requests.get(f"{api_base_url}/{endpoint}?{wildcard_params}", headers=headers)
@@ -61,7 +61,7 @@ class BookingManagementCalls:
 
         api_base_url = get_base_api_url()
         endpoint = "booking"
-        headers = {"Content-Type": "application/json", "Authorization": auth_token}
+        headers = {"Content-Type": "application/json", "Authorization": f"Bearer {auth_token}"}
 
         response = requests.get(f"{api_base_url}/{endpoint}/{str(booking_id)}", headers=headers)
 
